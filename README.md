@@ -12,27 +12,24 @@ CSS for styling.
 Firebase for authentication and hosting.
 
 # Setup and Installation
-# Clone the repository:
+## Clone the repository:
 
-bash
-Copy code
+### bash
 git clone https://github.com/OmolemoTlomatsane/netflix-clone.git
 
 # Install dependencies:
 
-bash
-Copy code
+### bash
 npm install
 Set up Firebase:
 
-# Create a Firebase project.
+## Create a Firebase project.
 Enable Firebase Authentication and Firestore.
 Replace your Firebase credentials in the firebase.js file.
 
-#Start the app:
+# Start the app:
 
-bash
-Copy code
+### bash
 npm start
 Access the app at http://localhost:3000.
 
@@ -41,29 +38,26 @@ Deploy your project to Firebase Hosting for production by following these steps:
 
 # Install Firebase CLI:
 
-bash
-Copy code
+### bash
 npm install -g firebase-tools
-Log in to Firebase:
 
-bash
-Copy code
+
+#Log in to Firebase:
+
+### bash
 firebase login
 
 # Initialize Firebase:
 
-bash
-Copy code
+### bash
 firebase init
 Build the app:
 
-bash
-Copy code
+### bash
 npm run build
 Deploy:
 
-bash
-Copy code
+### bash
 firebase deploy
 
 # License
