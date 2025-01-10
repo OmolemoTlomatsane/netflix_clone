@@ -42,7 +42,7 @@ Deploy your project to Firebase Hosting for production by following these steps:
 npm install -g firebase-tools
 
 
-#Log in to Firebase:
+# Log in to Firebase:
 
 ### bash
 firebase login
