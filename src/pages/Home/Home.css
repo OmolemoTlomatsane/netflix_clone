@@ -1,11 +1,13 @@
 .hero {
     position: relative;
+    padding-top: 120px; /* Ensure space at the top for the navbar */
 }
 
 .banner-img {
     width: 100%;
     mask-image: linear-gradient(to right, transparent, black 75%);
     -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+    margin-top: -50px; /* Move the image up */
 }
 
 .hero-caption {
@@ -30,7 +32,9 @@
 .hero-btns {
     display: flex;
     gap: 10px;
-    margin-bottom: 50px;
+    margin-top: 150px; /* Ensure buttons are further down */
+    z-index: 2; /* Ensure buttons are above other elements */
+    position: relative;
 }
 
 .hero-btns .btn img {
@@ -68,28 +72,34 @@
 @media (max-width: 768px) {
     .hero-caption {
         padding-left: 4%;
+        padding-right: 4%;
     }
 
     .hero-caption p {
-        font-size: 14px;
-        max-width: 90%;
+        display: none;
     }
 
     .caption-img {
-        width: 100%;
-        max-width: 300px;
+        display: none;
     }
 
     .hero-btns {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
+        align-items: center;
+        gap: 10px;
+        margin-top: 180px; /* Adjust top margin to move buttons further down */
+        margin-bottom: 30px;
     }
 
     .hero-btns .btn {
-        width: 100%;
+        width: 80%;
         justify-content: center;
-        font-size: 14px;
+        font-size: 12px; /* Smaller font size for buttons */
+        padding: 8px 15px; /* Reduced padding for smaller buttons */
+    }
+
+    .hero-btns .btn img {
+        width: 18px; /* Smaller icons for mobile view */
     }
 
     .banner-img {
