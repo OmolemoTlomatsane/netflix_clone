@@ -26,7 +26,7 @@ This is a Netflix-inspired web application built using React.js, CSS, and Fireba
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/netflix-clone.git
+   git clone https://github.com/OmolemoTlomatsane/netflix-clone.git
    ```
 
 2. Install dependencies:
@@ -81,8 +81,6 @@ Deploy your project to Firebase Hosting for production by following these steps:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is not yet under any license.
 
 ---
-
-This is the essential content for your README. You can add your personal touch or further details as needed!
