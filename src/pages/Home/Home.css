@@ -1,41 +1,44 @@
-.hero{
+.hero {
     position: relative;
 }
 
-.banner-img{
+.banner-img {
     width: 100%;
     mask-image: linear-gradient(to right, transparent, black 75%);
-    -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
 }
-.hero-caption{
+
+.hero-caption {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding-left: 6%;
 }
+
 .hero-caption p {
     max-width: 700px;
     font-size: 17px;
     margin-bottom: 20px;
 }
-.caption-img{
+
+.caption-img {
     width: 90%;
     max-width: 420px;
     margin-bottom: 30px;
 }
 
-.hero-btns{
+.hero-btns {
     display: flex;
-    gap:10px;
+    gap: 10px;
     margin-bottom: 50px;
 }
 
-.hero-btns .btn img{
+.hero-btns .btn img {
     width: 25px;
 }
 
-.hero-btns .btn{
-    border:0;
+.hero-btns .btn {
+    border: 0;
     outline: 0;
     padding: 8px 20px;
     display: inline-flex;
@@ -47,14 +50,54 @@
     border-radius: 4px;
     cursor: pointer;
 }
-.hero-btns .btn.dark-btn{
+
+.hero-btns .btn.dark-btn {
     color: #fff;
     background: #6d6d6eb3;
 }
 
-.hero-btns .btn:hover{
+.hero-btns .btn:hover {
     background: #ffffffbf;
 }
-.more-cards{
+
+.more-cards {
     padding-left: 6%;
+}
+
+/* Styles for small devices */
+@media (max-width: 768px) {
+    .hero-caption {
+        padding-left: 4%;
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .caption-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .banner-img {
+        mask-image: linear-gradient(to right, transparent, black 50%);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 50%);
+    }
+
+    .more-cards {
+        padding-left: 4%;
+    }
 }

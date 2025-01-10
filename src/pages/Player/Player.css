@@ -1,4 +1,4 @@
-.player{
+.player {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,15 +6,15 @@
     height: 100vh;
 }
 
-.player img{
+.player img {
     position: absolute;
     top: 20px;
     left: 20px;
-    width:50px;
+    width: 50px;
     cursor: pointer;
 }
 
-.player iframe{
+.player iframe {
     border-radius: 10px;
 }
 
@@ -23,4 +23,28 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+}
+
+/* Styles for small devices */
+@media (max-width: 768px) {
+    .player {
+        height: auto;
+        padding: 20px;
+    }
+
+    .player img {
+        top: 10px;
+        left: 10px;
+        width: 40px;
+    }
+
+    .player iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .player-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

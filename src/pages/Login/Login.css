@@ -1,31 +1,29 @@
-.login{
+.login {
     height: 100vh;
     background-image: linear-gradient(#0000007e, #0000007e), url('../../assets/background_banner.jpg');
     padding: 20px 8%;
-
 }
 
-.login-logo{
+.login-logo {
     width: 150px;
-
 }
 
-.login-form{
+.login-form {
     width: 100%;
     max-width: 450px;
-    background: rgba(0,0,0,0.75);
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     padding: 60px;
-    margin:auto;
+    margin: auto;
 }
 
-.login-form h1{
+.login-form h1 {
     font-size: 32px;
     font-weight: 500;
     margin-bottom: 28px;
 }
 
-.login-form input{
+.login-form input {
     width: 100%;
     height: 50px;
     background: #333;
@@ -39,11 +37,12 @@
     font-weight: 500;
 }
 
-.login-form input::placeholder{
+.login-form input::placeholder {
     font-size: 16px;
     font-weight: 500;
 }
-.login-form button{
+
+.login-form button {
     width: 100%;
     border: 0;
     outline: 0;
@@ -56,36 +55,39 @@
     margin-top: 20px;
     cursor: pointer;
 }
-.form-help{
+
+.form-help {
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #b3b3b3;
     font-size: 13px;
 }
-.remember{
+
+.remember {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.remember input{
+.remember input {
     width: 18px;
     height: 18px;
 }
-.form-switch{
+
+.form-switch {
     margin-top: 40px;
     color: #737373;
 }
 
-.form-switch span{
+.form-switch span {
     margin-left: 6px;
     color: #fff;
     font-weight: 500;
     cursor: pointer;
 }
 
-.login-spinner{
+.login-spinner {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -93,6 +95,46 @@
     justify-content: center;
 }
 
-.login-spinner img{
+.login-spinner img {
     width: 60px;
+}
+
+/* Styles for small devices */
+@media (max-width: 768px) {
+    .login {
+        padding: 20px 4%;
+    }
+
+    .login-logo {
+        width: 120px;
+    }
+
+    .login-form {
+        padding: 40px 20px;
+    }
+
+    .login-form h1 {
+        font-size: 28px;
+    }
+
+    .login-form input {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .login-form button {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .form-help {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .login-spinner img {
+        width: 50px;
+    }
 }
