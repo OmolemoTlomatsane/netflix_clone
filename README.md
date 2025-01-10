@@ -26,7 +26,7 @@ This is a Netflix-inspired web application built using React.js, CSS, and Fireba
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/OmolemoTlomatsane/netflix-clone.git
+   git clone https://github.com/OmolemoTlomatsane/netflix_clone.git
    ```
 
 2. Install dependencies:
